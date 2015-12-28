@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="H6D-b3-zS1">
-                                <rect key="frame" x="20" y="80" width="560" height="81"/>
+                                <rect key="frame" x="20" y="60" width="560" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-Bh-MDi">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
@@ -41,10 +42,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="bc8-fR-ae4">
+                                <rect key="frame" x="20" y="184" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bc8-fR-ae4" secondAttribute="height" multiplier="1:1" id="4CI-fk-XSZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H6D-b3-zS1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="0zK-Au-od2"/>
+                            <constraint firstItem="H6D-b3-zS1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="0zK-Au-od2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H6D-b3-zS1" secondAttribute="trailing" id="BLP-5J-gA2"/>
                             <constraint firstItem="H6D-b3-zS1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="clj-IJ-ZXA"/>
                         </constraints>
