@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D23FE021C386D350038E51B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23FE011C386D350038E51B /* RatingControl.swift */; };
+		7D23FE031C386D350038E51B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23FE011C386D350038E51B /* RatingControl.swift */; };
 		7DA679FA1C2B541F005B6427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA679F91C2B541F005B6427 /* AppDelegate.swift */; };
 		7DA679FC1C2B541F005B6427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA679FB1C2B541F005B6427 /* ViewController.swift */; };
 		7DA679FF1C2B541F005B6427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA679FD1C2B541F005B6427 /* Main.storyboard */; };
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D23FE011C386D350038E51B /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		7DA679F61C2B541F005B6427 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA679F91C2B541F005B6427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA679FB1C2B541F005B6427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 				7DA679F91C2B541F005B6427 /* AppDelegate.swift */,
 				7DA679FB1C2B541F005B6427 /* ViewController.swift */,
 				7DA679FD1C2B541F005B6427 /* Main.storyboard */,
+				7D23FE011C386D350038E51B /* RatingControl.swift */,
 				7DA67A001C2B541F005B6427 /* Assets.xcassets */,
 				7DA67A021C2B541F005B6427 /* LaunchScreen.storyboard */,
 				7DA67A051C2B541F005B6427 /* Info.plist */,
@@ -200,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA679FC1C2B541F005B6427 /* ViewController.swift in Sources */,
+				7D23FE021C386D350038E51B /* RatingControl.swift in Sources */,
 				7DA679FA1C2B541F005B6427 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D23FE031C386D350038E51B /* RatingControl.swift in Sources */,
 				7DA67A0F1C2B541F005B6427 /* SampleAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wtopolski.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,7 +353,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wtopolski.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
