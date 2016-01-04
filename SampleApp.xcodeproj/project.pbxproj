@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7D23FE021C386D350038E51B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23FE011C386D350038E51B /* RatingControl.swift */; };
 		7D23FE031C386D350038E51B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23FE011C386D350038E51B /* RatingControl.swift */; };
+		7D4DE8991C3B1CEF00BFE362 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4DE8981C3B1CEF00BFE362 /* Meal.swift */; };
+		7D4DE89A1C3B1CEF00BFE362 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4DE8981C3B1CEF00BFE362 /* Meal.swift */; };
 		7DA679FA1C2B541F005B6427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA679F91C2B541F005B6427 /* AppDelegate.swift */; };
 		7DA679FC1C2B541F005B6427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA679FB1C2B541F005B6427 /* ViewController.swift */; };
 		7DA679FF1C2B541F005B6427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA679FD1C2B541F005B6427 /* Main.storyboard */; };
@@ -29,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7D23FE011C386D350038E51B /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		7D4DE8981C3B1CEF00BFE362 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7DA679F61C2B541F005B6427 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA679F91C2B541F005B6427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA679FB1C2B541F005B6427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		7DA679F81C2B541F005B6427 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D4DE8981C3B1CEF00BFE362 /* Meal.swift */,
 				7DA679F91C2B541F005B6427 /* AppDelegate.swift */,
 				7DA679FB1C2B541F005B6427 /* ViewController.swift */,
 				7DA679FD1C2B541F005B6427 /* Main.storyboard */,
@@ -203,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4DE8991C3B1CEF00BFE362 /* Meal.swift in Sources */,
 				7DA679FC1C2B541F005B6427 /* ViewController.swift in Sources */,
 				7D23FE021C386D350038E51B /* RatingControl.swift in Sources */,
 				7DA679FA1C2B541F005B6427 /* AppDelegate.swift in Sources */,
@@ -214,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D23FE031C386D350038E51B /* RatingControl.swift in Sources */,
+				7D4DE89A1C3B1CEF00BFE362 /* Meal.swift in Sources */,
 				7DA67A0F1C2B541F005B6427 /* SampleAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
