@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oOs-9u-tBd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -8,10 +8,79 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meal Table View Controller-->
+        <scene sceneID="pWP-sz-aHl">
+            <objects>
+                <tableViewController id="oOs-9u-tBd" customClass="MealTableViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="h4Y-xP-iLn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="jek-lX-WZg" customClass="MealTableViewCell" customModule="SampleApp" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jek-lX-WZg" id="b2T-03-Cyk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="uXO-xC-b4q">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-wO-rbL">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="97" y="8" width="309" height="21"/>
+                                            </variation>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjO-kq-ZaD" customClass="RatingControl" customModule="SampleApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <variation key="heightClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="97" y="37" width="240" height="44"/>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="uXO-xC-b4q"/>
+                                            <exclude reference="AEx-wO-rbL"/>
+                                            <exclude reference="RjO-kq-ZaD"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="uXO-xC-b4q"/>
+                                            <include reference="AEx-wO-rbL"/>
+                                            <include reference="RjO-kq-ZaD"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="AEx-wO-rbL" id="JHx-BH-Cjd"/>
+                                    <outlet property="photoImageView" destination="uXO-xC-b4q" id="TTq-3a-6bY"/>
+                                    <outlet property="ratingControl" destination="RjO-kq-ZaD" id="718-l0-Dcu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oOs-9u-tBd" id="0bx-YI-TXm"/>
+                            <outlet property="delegate" destination="oOs-9u-tBd" id="Y57-0A-VIc"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIu-D1-4XC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="339"/>
+        </scene>
+        <!--Meal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -42,16 +111,10 @@
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="H6D-b3-zS1">
-                                <rect key="frame" x="20" y="60" width="141" height="81"/>
+                                <rect key="frame" x="20" y="60" width="129" height="51"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Meal name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-Bh-MDi">
-                                        <rect key="frame" x="0.0" y="0.0" width="141" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ala ma kota" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBZ-xg-jbI">
-                                        <rect key="frame" x="0.0" y="21" width="141" height="30"/>
+                                        <rect key="frame" x="0.0" y="21" width="129" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
@@ -65,7 +128,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="57" y="20" width="300" height="51"/>
+                                    <rect key="frame" x="57" y="20" width="300" height="30"/>
                                     <mask key="constraints">
                                         <include reference="1Si-HQ-Lx6"/>
                                     </mask>
@@ -93,15 +156,15 @@
                                 <exclude reference="SPP-N7-sDa"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="46j-Wh-Y3r"/>
+                                <exclude reference="9o8-Cj-mkG"/>
+                                <exclude reference="EF2-kf-i48"/>
                                 <exclude reference="4xZ-mD-whd"/>
                                 <exclude reference="OBn-H7-nrz"/>
                                 <exclude reference="qJY-8f-0Pl"/>
                                 <exclude reference="PHK-LK-Lkp"/>
                                 <exclude reference="jyd-Jt-p72"/>
                                 <exclude reference="sVx-oo-OCF"/>
-                                <exclude reference="46j-Wh-Y3r"/>
-                                <exclude reference="9o8-Cj-mkG"/>
-                                <exclude reference="EF2-kf-i48"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -109,22 +172,21 @@
                                 <include reference="SPP-N7-sDa"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="46j-Wh-Y3r"/>
+                                <include reference="9o8-Cj-mkG"/>
+                                <include reference="EF2-kf-i48"/>
                                 <include reference="4xZ-mD-whd"/>
                                 <include reference="OBn-H7-nrz"/>
                                 <include reference="qJY-8f-0Pl"/>
                                 <include reference="PHK-LK-Lkp"/>
                                 <include reference="jyd-Jt-p72"/>
                                 <include reference="sVx-oo-OCF"/>
-                                <exclude reference="46j-Wh-Y3r"/>
-                                <include reference="9o8-Cj-mkG"/>
-                                <include reference="EF2-kf-i48"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="nameLabelField" destination="dWC-Bh-MDi" id="ZrI-1t-bAB"/>
                         <outlet property="nameTextField" destination="jBZ-xg-jbI" id="qoF-yZ-pwb"/>
                         <outlet property="photoImageView" destination="bc8-fR-ae4" id="Qgo-mb-HHI"/>
                         <outlet property="ratingControl" destination="SPP-N7-sDa" id="zOE-Ti-Pha"/>
@@ -137,7 +199,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="219" y="339"/>
+            <point key="canvasLocation" x="181" y="339"/>
         </scene>
     </scenes>
     <resources>
