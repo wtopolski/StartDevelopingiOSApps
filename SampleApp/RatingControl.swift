@@ -64,14 +64,12 @@ class RatingControl: UIView {
     
     func ratingButtonTapped(button: UIButton) {
         rating = ratingButtons.indexOf(button)! + 1
-        print(rating)
         updateButtonSelectionStates()
     }
     
     func updateButtonSelectionStates() {
         for (index, button) in ratingButtons.enumerate() {
             // If the index of a button is less than the rating, that button should be selected.
-            print(String(index) + " < " + String(rating))
             button.selected = index < rating
         }
     }
