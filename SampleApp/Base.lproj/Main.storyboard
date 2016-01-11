@@ -23,48 +23,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="uXO-xC-b4q">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
-                                            </variation>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="kCK-61-LA4">
+                                            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-wO-rbL">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDd-3e-nh8">
+                                            <rect key="frame" x="97" y="8" width="285" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="97" y="8" width="309" height="21"/>
-                                            </variation>
                                         </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjO-kq-ZaD" customClass="RatingControl" customModule="SampleApp" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyH-7X-17A" customClass="RatingControl" customModule="SampleApp" customModuleProvider="target">
+                                            <rect key="frame" x="97" y="37" width="240" height="44"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="97" y="37" width="240" height="44"/>
-                                            </variation>
                                         </view>
                                     </subviews>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="uXO-xC-b4q"/>
-                                            <exclude reference="AEx-wO-rbL"/>
-                                            <exclude reference="RjO-kq-ZaD"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="heightClass=regular">
-                                        <mask key="subviews">
-                                            <include reference="uXO-xC-b4q"/>
-                                            <include reference="AEx-wO-rbL"/>
-                                            <include reference="RjO-kq-ZaD"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nameLabel" destination="AEx-wO-rbL" id="JHx-BH-Cjd"/>
-                                    <outlet property="photoImageView" destination="uXO-xC-b4q" id="TTq-3a-6bY"/>
-                                    <outlet property="ratingControl" destination="RjO-kq-ZaD" id="718-l0-Dcu"/>
+                                    <outlet property="nameLabel" destination="kDd-3e-nh8" id="vCt-eQ-0HJ"/>
+                                    <outlet property="photoImageView" destination="kCK-61-LA4" id="fUg-3I-xFj"/>
+                                    <outlet property="ratingControl" destination="XyH-7X-17A" id="cUA-zr-MPc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
